@@ -1,0 +1,34 @@
+---
+- name: Update macOS build tools bash scripts
+  hosts: myservers 
+  become: yes
+  tasks:
+  #  - name: Update Brew
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_brew.sh
+
+  #  - name: Update Cocoapods
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_cocoapods.sh
+
+  #  - name: Update dotnet
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_dotnet.sh
+    
+  #  - name: Update fastlane
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_fastlane.sh
+
+  #  - name: Update git-lfs
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_gitlfs.sh
+
+  #  - name: Update node
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_node.sh
+
+  #  - name: Update nvm
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_nvm.sh
+
+  #  - name: Update yarn
+  #    ansible.builtin.script: /home/parallels/update-scripts/update_yarn.sh
+
+  #   - name: Uninstall xcode
+  #     ansible.builtin.script: /home/parallels/update-scripts/uninstall_xcode.sh
+
+      - name: install xcode
+        ansible.builtin.script: /home/parallels/update-scripts/install_xcode.sh

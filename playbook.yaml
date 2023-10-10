@@ -27,8 +27,8 @@
   #  - name: Update yarn
   #    ansible.builtin.script: /home/parallels/update-scripts/update_yarn.sh
 
-  #   - name: Uninstall xcode
-  #     ansible.builtin.script: /home/parallels/update-scripts/uninstall_xcode.sh
+      - name: Uninstall xcode
+        ansible.builtin.script: ./uninstall_xcode.sh
 
       - name: install xcode
-        ansible.builtin.script: /home/parallels/update-scripts/install_xcode.sh
+        ansible.builtin.script: ./install_xcode.sh
